@@ -1,0 +1,94 @@
+html,body {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transform: scale(1.5);
+    align-items: center;
+    align-content: center;
+    font-family: sans-serif;
+    background-image: url(https://wallpaperaccess.com/full/5652030.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+section{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.con{
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: contain;
+}
+#we{
+    text-align: center;
+    font-size:xx-large;
+    color: white;
+}
+.but{
+    border-radius: 12px;  
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;  
+}
+.but::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;  
+    background-color: #333;
+    border-radius: 10px;
+}
+.but::before{
+    content: "";
+    background: linear-gradient(
+    45deg,
+    #FFFB00, #48FF00, #FF00C8, #FF0000,
+    #FF7300, #FF0000, #00FFD5, #002BFF,
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+@keyframes glowing{
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+.but:hover::before{
+    opacity: 1;
+}
+.but:active:after{
+    background: transparent;
+}
+.but:active{
+    font-weight: bold;
+}
+@media only screen and (max-width:600px){
+    .con{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9a5c8b9d12.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Conatact</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <i id="close" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i id="close" class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="headertext">
+        <p>Developer</p>
+        <h1>Hi, I'm <span>Atharv</span><br>Khairnar</h1>
+      </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="aboutcol1">
+          <img src="photo.jpg" alt="">
+
+        </div>
+        <div class="aboutcol2">
+          <h1 class="sub">About Me</h1>
+          <p>Hello, I am Atharv Manoj Khairnar, currently pursuing in Third year, B.E Computer Engineering.I am always eager to learn new technologies, new things, programming languages to become a good future software developer Engineer.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+            <p class="tab-links"  onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>Developer</span><br>Frontend Web Developer</li>
+              <li><span>Programming Languages</span><br>Python, C++, Java, Javascript</li>
+              <li><span>Developer</span><br>Data Structures and Algorithms</li>
+              <li><span>Database</span><br>MySQL</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024</span><br>Smart India Hackathon</li>
+              <li><span>2024</span><br>Unstop endorse, Flipkart</li>
+              <li><span>2024</span><br>Projects in codealpha intern</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022-2026</span><br>B.E Computer Engineering, Savitribai Phule Pune University</li>
+              <li><span>2020-2022</span><br>11th and 12th Science, K.T.H.M. College,Nashik</li>
+              <li><span>2020</span><br>10th Passout, Maratha Highschool,Nashik</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div id="services">
+  <div class="container">
+    <h1 class="sub">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i><i class="fa-solid fa-code"></i></i>
+        <h2>Development</h2>
+        <p>Developer as Python, Java, C++, Data structures and algorithms. Problem solving, multitasking.</p>
+        <a href="">Learn More</a>
+      </div>
+      <div>
+        <i><i class="fa-solid fa-crop"></i></i>
+        <h2>Databases</h2>
+        <p>Working on databases like MySQL, powerbi. Bootstrap framework for web designing.</p>
+        <a href="">Learn More</a>
+      </div>
+      <div>
+        <i><i class="fa-solid fa-code"></i></i>
+        <h2>Web Design</h2>
+        <p>Web development and web designing using frontend and python libraries.</p>
+        <a href="">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.E4xF16c6GclC1j_m7DrOWQHaE8&pid=Api&P=0&h=180" alt="">
+        <div class="layer">
+          <h3>Data Science</h3>
+          <p>Python as Machine learning, Algorithms of Machine learning.</p>
+          <a href=""><i class="fa-solid fa-code"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.TJO-CjFrXCs8_G_m2KEk5wHaE8&pid=Api&P=0&h=180" alt="">
+        <div class="layer">
+          <h3>Problem Solving</h3>
+          <p>Problem solver to find out the best optimal solution for th problem.</p>
+          <a href=""><i class="fa-solid fa-code"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://tse1.mm.bing.net/th?id=OIP.CvVe9oqvrzzVMk2HPY30GgHaEK&pid=Api&P=0&h=180" alt="">
+        <div class="layer">
+          <h3>Developer</h3>
+          <p>Data Structures and algorithms in Java programming language.</p>
+          <a href=""><i class="fa-solid fa-code"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>khairnaratharv476@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>7385877202</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/atharv-khairnar-5438ba294"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/atharv5514/"><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <a href="Atharv's Resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right"></div>
+      <form name="submit-to-google-sheet" >
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+      </form>
+      <span id="msg"></span>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright Atharv Khairnar <i class="fa-solid fa-copyright"></i></p>
+  </div>
+</div>
+
+
+
+
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right="0";
+  }
+  function closemenu(){
+    sidemenu.style.right="-200px";
+  }
+
+</script>
+
+<script>
+  const scriptURL ='https://script.google.com/macros/s/AKfycbzUFusIOi-k-YCC3CxrvRWTm3bXLfg7BCK1E7KMcnax_yp-0i_TcDFXVV1JIUY6CulSog/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
